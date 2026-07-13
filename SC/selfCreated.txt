@@ -1,0 +1,3 @@
+1. Given a vector of integers nums, remove all the duplicates from it.
+2. Given a vector of pairs, remove all the duplicate pairs.
+3. Given a vector of triplets, remove all the duplicate triplets.
