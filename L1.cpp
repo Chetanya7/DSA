@@ -3,7 +3,7 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.*/
 
 // Bruteforce: TC - O(N2), SC: O(1)
-#include <iostream>
+/* #include <iostream>
 #include <vector>
 using namespace std;
 
@@ -31,4 +31,25 @@ int main() {
     vector<int> indices = twoSum(nums, target);
     display(indices);
     return 0;
+}*/
+
+// Better
+// TC: O(nlogn)
+// SC: O(n)
+
+#include <iostream>
+#include <vector>
+#include <map>
+using namespace std;
+
+vector<int> twoSum(vector<int>& nums, int target){
+    map<int,int> m;
+    for(int i=0; i<nums.size(); i++){
+        int diff = target - nums[i];
+        if(m.find(diff) != m.end()) {
+            return {m[diff], i};
+        }
+        m.insert({nums[i],i});
+    }
+    return {};
 }
