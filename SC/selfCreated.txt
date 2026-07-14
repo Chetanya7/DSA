@@ -1,3 +1,5 @@
 1. Given a vector of integers nums, remove all the duplicates from it.
 2. Given a vector of pairs, remove all the duplicate pairs.
 3. Given a vector of triplets, remove all the duplicate triplets.
+4. Given two vectors of integers, return 1 if they are made up of same integers and 0 if they aren't.
+    e.g. vec1 = {1,2,3,4,4,-8,0} and vec2 = {1,2,2,3,0,4,1,-8}
