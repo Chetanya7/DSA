@@ -25,7 +25,8 @@ int majorityElement(vector<int>& nums) {
 // Better
 // TC: O(nlogn) as sort which uses Introsort (an hybrid of Heapsort, Quicksort and insertion sort) takes O(nlogn) time
 // SC: O(logn) - Even thought the sorting is in-place, that is because Introsort is recursive and requires O(logn) auxiliary space on the stack.
-#include <iostream>
+
+/*#include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -33,6 +34,25 @@ using namespace std;
 int majorityElement(vector<int>& nums){
     sort(nums.begin(), nums.end());
     return nums[nums.size()/2];
+}*/
+
+// Better-2
+// TC: O(N) because we iterate through the array of size n exactly once, and map insertions/lookups take O(1) time on average
+// SC: O(N)
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+int majorityElement(vector<int>& nums){
+    unordered_map<int,int> counts;
+    for(int num : nums){
+        counts[num]++;
+        if(counts[num] > nums.size()/2){
+            return num;
+        }
+    }
+    return {};
 }
 
 int main() {
