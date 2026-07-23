@@ -2,6 +2,7 @@
 
 Shortcut to split editor down: ctrl+k then ctrl+\  
 A repository of DSA and CP problems that I have solved  
+23/07/2026: GS-Q1  
 17/07/2026: CF1899A (Game with Integers), CF1896A (Jagged Swaps)  
 16/07/2026: L169 (Majority Element {better & better2}) and L153 (Find minimum in rotated sorted array)  
 15/07/2026: CF1901A (Line Trip), CF1900A (Cover in Water)  
