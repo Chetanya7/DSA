@@ -2,7 +2,8 @@
 
 Shortcut to split editor down: ctrl+k then ctrl+\  
 A repository of DSA and CP problems that I have solved  
-14/08/2026: L209{Optimal}
+05/09/2026: L1647{Optimal}  
+14/08/2026: L209{Optimal}  
 25/07/2026: L35{optimal}  
 24/07/2026: GS-Q2{better}, L58, CF1890A  
 23/07/2026: GS-Q1, L2006{bf}, L2006{optimal}, L724{optimal}, L724{better}, L1991{optimal}, CF1060A  
