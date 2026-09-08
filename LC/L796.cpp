@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 using namespace std;
 
 bool rotateString(string s, string goal){
@@ -12,4 +13,11 @@ bool rotateString(string s, string goal){
     } else{
         return false;
     }
+}
+
+int main(){
+    string s = "abcde";
+    string goal = "cdeab";
+    bool output = rotateString(s, goal);
+    cout << output;
 }
