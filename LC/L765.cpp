@@ -1,3 +1,6 @@
+// TC: O(n^2)
+// SC: O(1)
+
 #include <vector>
 #include <iostream>
 using namespace std;
