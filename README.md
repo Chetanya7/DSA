@@ -2,7 +2,7 @@
 
 Shortcut to split editor down: ctrl+k then ctrl+\  
 A repository of DSA and CP problems that I have solved  
-16/09/2026: L3718{Better}  
+16/09/2026: L3718{Better}, L3090{optimal}  
 15/09/2026: L3718{Optimal}  
 14/09/2026: L3090  
 13/09/2026: L3876  
