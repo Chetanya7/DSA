@@ -11,7 +11,7 @@ using namespace std;
 vector<int> removeDuplicates1(vector<int>& nums) {
     vector<int> result;
     int size = nums.size();
-    
+
     for(int i=0; i<size; i++) {
         int found = 0;
         for(int j=0; j<result.size(); j++) {
@@ -33,7 +33,7 @@ vector<int> removeDuplicates1(vector<int>& nums) {
 
 #include <unordered_set>
 
-vector<int> removeDuplicates2(vector<int> nums) {
+vector<int> removeDuplicates2(vector<int>& nums) {
     int n = nums.size();
     vector<int> result;
     unordered_set<int> s;
