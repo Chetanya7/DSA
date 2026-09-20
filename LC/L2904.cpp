@@ -6,7 +6,7 @@ using namespace std;
 // The generalization assumes that the string can be non-binary, 
 // and the character that is to have k occurences is also provided by the user.
 
-// TC: O(n^2)
+// TC: O(n*n)
 // SC: O(n) where n = s.length() as 'occurences'can at max contain all the indices of the string s
 
 string shortestBeautifulSubstring(string s, int k, char ch) {
@@ -39,15 +39,14 @@ string shortestBeautifulSubstring(string s, int k, char ch) {
         if(width == len) {
             // Implementing the lexicographic tie breaker
             for(int i=0; i<len; i++) {
+                if(s[occurences[left]+i] < s[left_index+i]) {
+                    left_index = occurences[left];
+                    right_index = occurences[right];
+                    break;
+                }
 
-                if(s[occurences[left]+i] != s[left_index+i]) {
-                    if(s[occurences[left]+i] < s[left_index+i]) {
-                        left_index = occurences[left];
-                        right_index = occurences[right];
-                        break;
-                    } else {
-                        break;
-                    }
+                if(s[occurences[left]+i] > s[left_index+i]) {
+                    break;
                 }
             }
         }
