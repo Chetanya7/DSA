@@ -6,11 +6,12 @@ using namespace std;
 
 // Bruteforce
 // TC: O(N^2)
-// SC: O(N)
+// SC: O(1)
 
-vector<int> removeDuplicates(vector<int>& nums) {
+vector<int> removeDuplicates1(vector<int>& nums) {
     vector<int> result;
     int size = nums.size();
+    
     for(int i=0; i<size; i++) {
         int found = 0;
         for(int j=0; j<result.size(); j++) {
@@ -26,6 +27,28 @@ vector<int> removeDuplicates(vector<int>& nums) {
     return result;
 }
 
+// Optimal
+// TC: O(n)
+// SC: O(n)
+
+#include <unordered_set>
+
+vector<int> removeDuplicates2(vector<int> nums) {
+    int n = nums.size();
+    vector<int> result;
+    unordered_set<int> s;
+
+    for(int i=0; i<n; i++) {
+        if(!s.count(nums[i])) {
+            s.insert(nums[i]);
+            result.push_back(nums[i]);
+        }
+    }
+
+    return result;
+}
+
+
 void display(vector<int>& result) {
     for(int i : result) {
         cout << i << "\t";
@@ -34,7 +57,7 @@ void display(vector<int>& result) {
 
 int main() {
     vector<int> nums = {1,2,3,2,4,1};
-    vector<int> result = removeDuplicates(nums);
+    vector<int> result = removeDuplicates2(nums);
     display(result);
 
     return 0;
