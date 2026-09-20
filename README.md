@@ -2,7 +2,7 @@
 
 Shortcut to split editor down: ctrl+k then ctrl+\  
 A repository of DSA and CP problems that I have solved  
-20/09/2026: SC1{O(n) time}  
+20/09/2026: SC1{O(n) time}, L1365{bf: O(n^2)}  
 19/09/2026: L2904, L1470  
 18/09/2026: L1920, L1480  
 17/09/2026: L1929  
